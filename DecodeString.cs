@@ -6,7 +6,7 @@ namespace Geek
     {
         static void Main(string[] args)
         {
-            string s = "3[b2[ca]]";
+            string s = "3[b4[]2[za]]";
             var p = new Program();
             Console.WriteLine(p.Solve(s, 0, s.Length - 1));
         }
@@ -55,6 +55,7 @@ namespace Geek
                     {
                         substr = substr + subResult;
                     }
+                    multiplier = 0;
                 }
                 else
                 {
